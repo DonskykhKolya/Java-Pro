@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+<servlet>
+    <servlet-name>EnterServlet</servlet-name>
+    <servlet-class>com.gmail.ndonskih63.EnterServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>EnterServlet</servlet-name>
+    <url-pattern>/enter</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>RedactServlet</servlet-name>
+    <servlet-class>com.gmail.ndonskih63.RedactServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RedactServlet</servlet-name>
+    <url-pattern>/redact</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>SaveServlet</servlet-name>
+    <servlet-class>com.gmail.ndonskih63.SaveServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SaveServlet</servlet-name>
+    <url-pattern>/save</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>PublishServlet</servlet-name>
+    <servlet-class>com.gmail.ndonskih63.PublishServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>PublishServlet</servlet-name>
+    <url-pattern>/publish</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>RemoveServlet</servlet-name>
+    <servlet-class>com.gmail.ndonskih63.RemoveServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RemoveServlet</servlet-name>
+    <url-pattern>/remove</url-pattern>
+</servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.gmail.ndonskih63.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+</web-app>
