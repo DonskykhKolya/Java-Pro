@@ -1,0 +1,13 @@
+package com.gmail.ndonskih63;
+
+public class MainTest {
+
+    public static void main(String[] args) {
+    TestingClass tc = new TestingClass(1, "Inokentiy", "Ivanov", 99.9);
+    System.out.println(tc);
+    DoSerializer save = new DoSerializer("test.txt");
+    save.saver(tc);
+    TestingClass tcYet = save.loader("test.txt", TestingClass.class);
+        System.out.println(tcYet);
+    }
+}
