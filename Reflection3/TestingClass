@@ -1,0 +1,61 @@
+package com.gmail.ndonskih63;
+
+public class TestingClass {
+
+    @Save private  int position;
+    @Save private String name;
+    private String surname;
+    @Save private double points;
+
+    public TestingClass(int position, String name, String surname, double points) {
+        this.position = position;
+        this.name = name;
+        this.surname = surname;
+        this.points = points;
+    }
+
+    public TestingClass() {
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public double getPoints() {
+        return points;
+    }
+
+    public void setPoints(double points) {
+        this.points = points;
+    }
+
+    @Override
+    public String toString() {
+        return "TestingClass{" +
+                "position=" + position +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", points=" + points +
+                '}';
+    }
+}
